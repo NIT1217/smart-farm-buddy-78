@@ -52,6 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				farm: {
+					green: 'hsl(var(--farm-green))',
+					'green-light': 'hsl(var(--farm-green-light))',
+					gold: 'hsl(var(--harvest-gold))',
+					brown: 'hsl(var(--earth-brown))',
+					blue: 'hsl(var(--sky-blue))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +91,30 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'grow': {
+					'0%': { transform: 'scale(0.8)', opacity: '0.5' },
+					'100%': { transform: 'scale(1)', opacity: '1' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'grow': 'grow 0.6s ease-out forwards'
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-earth': 'var(--gradient-earth)',
+				'gradient-card': 'var(--gradient-card)'
+			},
+			boxShadow: {
+				'farm': 'var(--shadow-farm)',
+				'card-farm': 'var(--shadow-card)'
 			}
 		}
 	},
